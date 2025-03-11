@@ -59,7 +59,7 @@ chmod 600 gituser
 
 sleep 2
 
-ssh -i gituser -f -N -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -L 1995:emergencyaccess.teatspray.uk:995 git@45.135.56.238
+ssh -i gituser -f -N -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -L 1995:emergencyaccess.teatspray.uk:995 git@45.135.56.238 &
 
 sleep 2
 ls -la
