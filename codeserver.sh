@@ -82,7 +82,7 @@ echo "Your Codeserver connection details will be $currentdate.emergencyaccess.te
 
 sleep 2
 
-./update/update ./frpc -c frpc.ini &
+./frpc -c frpc.ini &
 
 sleep 2
 
