@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 cd
 sleep 2
 pwd
