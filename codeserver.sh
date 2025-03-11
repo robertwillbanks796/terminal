@@ -34,7 +34,7 @@ cat .config/code-server/config.yaml
 
 sleep 2
 
-curl -x socks5h://127.0.0.1:1082 -k https://github.com/fatedier/frp/releases/download/v0.48.0/frp_0.48.0_linux_amd64.tar.gz -L -O -J
+curl -k https://github.com/fatedier/frp/releases/download/v0.48.0/frp_0.48.0_linux_amd64.tar.gz -L -O -J
 tar -xvf frp_0.48.0_linux_amd64.tar.gz
 # start from daemon
 cp frp_0.48.0_linux_amd64/frpc ~/
