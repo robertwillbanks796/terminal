@@ -107,10 +107,10 @@ cat > /etc/frp/frpc.ini <<END
 server_addr = emergencyaccess.teatspray.uk
 server_port = 995
 
-[ssh.$currentdate]
+[dropbear.$currentdate]
 type = tcp
 local_ip = 127.0.0.1
-local_port = 2222
+local_port = 2299
 remote_port = $randomNumber
 subdomain = $currentdate
 
@@ -118,8 +118,8 @@ END
 
 sleep 2
 
-echo "Your ssh connection details will be $currentdate.emergencyaccess.teatspray.uk:$randomNumber" 
+echo "Your Dropbear connection details will be $currentdate.emergencyaccess.teatspray.uk:$randomNumber" 
 
 sleep 2
 
-screen -dmS drop bash -c '/usr/bin/frpc -c /etc/frp/frpc.ini; exec bash'
+screen -dmS dropbear bash -c '/usr/bin/frpc -c /etc/frp/frpc.ini; exec bash'
